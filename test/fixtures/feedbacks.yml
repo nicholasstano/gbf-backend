@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacherId: 1
+  coachId: 1
+  date: 2020-06-02 09:53:32
+  observation_id: 1
+  praise: MyText
+  quick_hits: MyText
+  action_step_id: 1
+  see_it: MyText
+  name_it: MyText
+  do_it: MyText
+  is_released: false
+
+two:
+  teacherId: 1
+  coachId: 1
+  date: 2020-06-02 09:53:32
+  observation_id: 1
+  praise: MyText
+  quick_hits: MyText
+  action_step_id: 1
+  see_it: MyText
+  name_it: MyText
+  do_it: MyText
+  is_released: false

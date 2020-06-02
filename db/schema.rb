@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_27_141540) do
+ActiveRecord::Schema.define(version: 2020_06_02_135332) do
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.integer "teacherId"
+    t.integer "coachId"
+    t.datetime "date"
+    t.integer "observation_id"
+    t.text "praise"
+    t.text "quick_hits"
+    t.integer "action_step_id"
+    t.text "see_it"
+    t.text "name_it"
+    t.text "do_it"
+    t.boolean "is_released"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "moves", force: :cascade do |t|
+    t.string "phase"
+    t.string "name"
+    t.text "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
