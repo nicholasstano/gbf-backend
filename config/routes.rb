@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users
       resources :moves
-      resources :feedback
+      resources :feedbacks
+      resources :observations
     end
   end
   root to: 'home#index'
