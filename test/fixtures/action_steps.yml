@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  short_name: MyString
+  long_text: MyText
+  date: 2020-06-12 13:18:25
+  move_id: 
+  is_assigned: false
+  is_completed: false
+
+two:
+  short_name: MyString
+  long_text: MyText
+  date: 2020-06-12 13:18:25
+  move_id: 
+  is_assigned: false
+  is_completed: false

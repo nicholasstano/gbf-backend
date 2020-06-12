@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_02_143028) do
+ActiveRecord::Schema.define(version: 2020_06_12_175733) do
+
+  create_table "action_steps", force: :cascade do |t|
+    t.string "short_name"
+    t.text "long_text"
+    t.datetime "date"
+    t.integer "move_id"
+    t.boolean "is_assigned"
+    t.boolean "is_completed"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "teacherId"
+    t.integer "coachId"
+  end
 
   create_table "feedbacks", force: :cascade do |t|
     t.integer "teacherId"
@@ -47,6 +60,17 @@ ActiveRecord::Schema.define(version: 2020_06_02_143028) do
     t.boolean "is_released"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "teacher_coaches", force: :cascade do |t|
+    t.datetime "join_date"
+    t.string "organization"
+    t.string "courses"
+    t.string "department"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "coachId"
+    t.integer "teacherId"
   end
 
   create_table "users", force: :cascade do |t|

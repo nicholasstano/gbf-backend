@@ -1,0 +1,2 @@
+class ActionStep < ApplicationRecord
+end

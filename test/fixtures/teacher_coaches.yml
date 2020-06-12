@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacher_name: MyString
+  coach_name: MyString
+  join_date: 2020-06-12 13:41:46
+  organization: MyString
+  courses: 
+  department: MyString
+
+two:
+  teacher_name: MyString
+  coach_name: MyString
+  join_date: 2020-06-12 13:41:46
+  organization: MyString
+  courses: 
+  department: MyString

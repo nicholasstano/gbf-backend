@@ -6,6 +6,9 @@ Rails.application.routes.draw do
       resources :moves
       resources :feedbacks
       resources :observations
+      resources :action_steps
+      resources :teacher_coaches
+
     end
   end
   root to: 'home#index'
