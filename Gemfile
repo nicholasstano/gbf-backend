@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'rack-cors', :require => 'rack/cors'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
