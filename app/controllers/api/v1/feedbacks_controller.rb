@@ -9,6 +9,11 @@ class Api::V1::FeedbacksController < ApplicationController
         render json: feedback
     end
 
+    def destroy
+        feedback = Feedback.find(params[:id])
+        feedback.delete
+    end
+
     private 
 
     def feedback_params
