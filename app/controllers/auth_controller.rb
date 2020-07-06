@@ -8,5 +8,10 @@ class AuthController < ApplicationController
         else
           render json: {errors: "Invalid email/password combination. Please try again or register if you do not already have an account."}
         end
-      end
+    end
+
+    def autologin
+      user = User.find_by(params[:id])
+      render json: user
+    end
 end
