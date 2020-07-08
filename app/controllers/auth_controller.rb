@@ -11,7 +11,8 @@ class AuthController < ApplicationController
     end
 
     def autologin
-      user = User.find_by(params[:id])
+      userId = request.headers['Authorization']
+      user = User.find(userId)
       render json: user
     end
 end
