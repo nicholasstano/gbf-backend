@@ -9,12 +9,12 @@
 
 ## URL path to view db objects:
 
-* users: [localhost:3000/api/v1/users](localhost:3000/api/v1/users)
-* teacher_coaches: [localhost:3000/api/v1/teacher_coaches](localhost:3000/api/v1/teacher_coaches)
-* observations: [localhost:3000/api/v1/observations](localhost:3000/api/v1/observations)
-* moves: [localhost:3000/api/v1/moves](localhost:3000/api/v1/moves)
-* feedbacks: [localhost:3000/api/v1/feedbacks](localhost:3000/api/v1/feedbacks)
-* action_steps: [localhost:3000/api/v1/action_steps](localhost:3000/api/v1/action_steps)
+* users: [localhost:3000/api/v1/users](http://localhost:3000/api/v1/users)
+* teacher_coaches: [localhost:3000/api/v1/teacher_coaches](http://localhost:3000/api/v1/teacher_coaches)
+* observations: [localhost:3000/api/v1/observations](http://localhost:3000/api/v1/observations)
+* moves: [localhost:3000/api/v1/moves](http://localhost:3000/api/v1/moves)
+* feedbacks: [localhost:3000/api/v1/feedbacks](http://localhost:3000/api/v1/feedbacks)
+* action_steps: [localhost:3000/api/v1/action_steps](http://localhost:3000/api/v1/action_steps)
 
 ## How to access the Rails console:
 * Run `rails c` from the command line.
