@@ -43,17 +43,14 @@ Circulate the room with purpose (break the plane): \n
    o Move away from the student who's speaking to monitor the whole room")
 
 
-# ActionStep.create()
+as1 = ActionStep.create(short_text: "Threshold", long_text: "Donna will stand in the threshold of her doorway when greeting students at the beginning of class.", date: "2020-06-12T00:00:00.000Z", move_id: routines.id, is_assigned: false, is_completed: false, teacherId: donna.id, coachId: boris.id)
+as2 = ActionStep.create(short_text: "Square Up", long_text: "Earl will square up and stand still before delivering instructions to the class.", date: "2020-06-12T00:00:00.000Z", move_id: strongvoice.id, is_assigned: false, is_completed: false, teacherId: earl.id, coachId: boris.id)
+as3 = ActionStep.create(short_text: "Strong Voice", long_text: "Francis will use strong voice when delivering instructions to students.", date: "2020-06-12T00:00:00.000Z", move_id: strongvoice.id, is_assigned: false, is_completed: false, teacherId: francis.id, coachId: cathy.id)
 
-#    create_table "action_steps", force: :cascade do |t|
-#     t.string "short_name"
-#     t.text "long_text"
-#     t.datetime "date"
-#     t.integer "move_id"
-#     t.boolean "is_assigned"
-#     t.boolean "is_completed"
-#     t.datetime "created_at", null: false
-#     t.datetime "updated_at", null: false
-#     t.integer "teacherId"
-#     t.integer "coachId"
-#   end
+obs1 = Observation.create(teacherId: donna.id, coachId: boris.id, date: "2020-06-12T00:00:00.000Z", move: routines.id, score: 3, notes: "Donna Notes", comments: "Donna Comments", is_released: false)
+obs2 = Observation.create(teacherId: earl.id, coachId: boris.id, date: "2020-06-12T00:00:00.000Z", move: strongvoice.id, score: 2, notes: "Earl Notes", comments: "Earl Comments", is_released: false)
+obs3 = Observation.create(teacherId: francis.id, coachId: cathy.id, date: "2020-06-12T00:00:00.000Z", move: strongvoice.id, score: 4, notes: "Francis Notes", comments: "Francis Comments", is_released: false)
+
+Feedback.create(teacherId: donna.id, coachId: boris.id, date: "2020-06-12T00:00:00.000Z", observation_id: obs1.id, praise: "Nice Job Donna", quick_hits: "Do this Donna", action_step_id: as1.id, see_it: "See It Donna", name_it: "Name it Donna", do_it: "Do It Donna", is_released: false)
+Feedback.create(teacherId: earl.id, coachId: boris.id, date: "2020-06-12T00:00:00.000Z", observation_id: obs2.id, praise: "Nice Job Earl", quick_hits: "Do this Earl", action_step_id: as2.id, see_it: "See It Earl", name_it: "Name it Earl", do_it: "Do It Earl", is_released: false)
+Feedback.create(teacherId: francis.id, coachId: cathy.id, date: "2020-06-12T00:00:00.000Z", observation_id: obs3.id, praise: "Nice Job Francis", quick_hits: "Do this Francis", action_step_id: as3.id, see_it: "See It Francis", name_it: "Name it Francis", do_it: "Do It Francis", is_released: false)
