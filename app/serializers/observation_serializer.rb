@@ -1,3 +1,3 @@
 class ObservationSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :teacherId, :coachId, :date, :move, :score, :notes, :comments, :is_released
 end

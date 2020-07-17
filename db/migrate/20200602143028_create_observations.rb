@@ -4,7 +4,7 @@ class CreateObservations < ActiveRecord::Migration[5.2]
       t.integer :teacherId
       t.integer :coachId
       t.datetime :date
-      t.string :move
+      t.integer :move
       t.integer :score
       t.text :notes
       t.text :comments

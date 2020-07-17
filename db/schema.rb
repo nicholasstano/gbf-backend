@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_175733) do
     t.integer "teacherId"
     t.integer "coachId"
     t.datetime "date"
-    t.string "move"
+    t.integer "move"
     t.integer "score"
     t.text "notes"
     t.text "comments"
