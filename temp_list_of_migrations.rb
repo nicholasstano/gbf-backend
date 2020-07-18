@@ -1,3 +1,13 @@
+create_users
+create_teacher_coaches
+create_moves
+create_feedbacks
+create_observations
+create_action_steps
+
+
+ password_digest:string teacher_name:string is_teacher:boolean is_coach:boolean is_leader:boolean organization:string timestamps
+
 class CreateUsers < ActiveRecord::Migration[5.2]
   def change
     create_table :users do |t|
@@ -96,15 +106,5 @@ class CreateTeacherCoaches < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-  end
-end
-
-
----------------- Below here are the changes to incorporate above ^^^ -------
-
-class AddCoachIdAndTeacherIdToTeacherCoaches < ActiveRecord::Migration[5.2]
-  def change
-    add_column :teacher_coaches, :coachId, :integer
-    add_column :teacher_coaches, :teacherId, :integer
   end
 end
