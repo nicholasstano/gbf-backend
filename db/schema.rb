@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_06_12_175733) do
 
   create_table "action_steps", force: :cascade do |t|
-    t.string "short_name"
+    t.string "short_text"
     t.text "long_text"
     t.datetime "date"
     t.integer "move_id"
@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2020_06_12_175733) do
     t.integer "teacherId"
     t.integer "coachId"
     t.datetime "date"
-    t.string "move"
+    t.integer "move"
     t.integer "score"
     t.text "notes"
     t.text "comments"
