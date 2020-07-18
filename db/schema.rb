@@ -10,9 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_12_175733) do
+ActiveRecord::Schema.define(version: 2020_07_18_160558) do
 
   create_table "action_steps", force: :cascade do |t|
+    t.integer "teacherId"
+    t.integer "coachId"
     t.string "short_text"
     t.text "long_text"
     t.datetime "date"
@@ -21,8 +23,6 @@ ActiveRecord::Schema.define(version: 2020_06_12_175733) do
     t.boolean "is_completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "teacherId"
-    t.integer "coachId"
   end
 
   create_table "feedbacks", force: :cascade do |t|
@@ -63,14 +63,14 @@ ActiveRecord::Schema.define(version: 2020_06_12_175733) do
   end
 
   create_table "teacher_coaches", force: :cascade do |t|
+    t.integer "teacherId"
+    t.integer "coachId"
     t.datetime "join_date"
     t.string "organization"
     t.string "courses"
     t.string "department"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "coachId"
-    t.integer "teacherId"
   end
 
   create_table "users", force: :cascade do |t|
