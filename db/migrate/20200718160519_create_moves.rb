@@ -4,7 +4,6 @@ class CreateMoves < ActiveRecord::Migration[5.2]
       t.string :phase
       t.string :name
       t.text :description
-
       t.timestamps
     end
   end

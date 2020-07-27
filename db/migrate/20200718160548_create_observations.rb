@@ -9,7 +9,6 @@ class CreateObservations < ActiveRecord::Migration[5.2]
       t.text :notes
       t.text :comments
       t.boolean :is_released
-
       t.timestamps
     end
   end

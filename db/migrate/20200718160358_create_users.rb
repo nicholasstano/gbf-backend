@@ -8,7 +8,6 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.boolean :is_coach
       t.boolean :is_leader
       t.string :organization
-
       t.timestamps
     end
   end

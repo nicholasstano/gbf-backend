@@ -12,7 +12,6 @@ class CreateFeedbacks < ActiveRecord::Migration[5.2]
       t.text :name_it
       t.text :do_it
       t.boolean :is_released
-
       t.timestamps
     end
   end
