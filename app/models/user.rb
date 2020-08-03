@@ -1,9 +1,13 @@
 class User < ApplicationRecord
     has_secure_password
-    has_many :teacher_coaches, foreign_key: "coachId"
+    has_many :teacher_coaches, foreign_key: "teacherId"
     has_many :observations, foreign_key: 'teacherId'
     has_many :feedbacks, foreign_key: 'teacherId'
     has_many :action_steps, foreign_key: 'teacherId'
+
+    def coachInformation
+        self.teacher_coaches[0]
+    end
 
     def feedback
         feedback = Feedback.all.select { |fb| fb.teacherId == self.id}
