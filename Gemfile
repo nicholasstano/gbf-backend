@@ -30,7 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rack-cors', :require => 'rack/cors'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-gem 'rack', '~> 2.2.3'
+gem 'rack', '~> 2.2.6'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
